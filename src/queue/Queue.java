@@ -6,7 +6,7 @@ public class Queue<T extends Comparable<T>> {
     private Node<T> lastNode;
     private int count;
 
-    public boolean isEmpty() {
+    private boolean isEmpty() {
         return this.firstNode == null;
     }
 
@@ -30,6 +30,7 @@ public class Queue<T extends Comparable<T>> {
 
     }
 
+    // O(1) time complexity
     public T dequeue() {
 
         this.count--;
